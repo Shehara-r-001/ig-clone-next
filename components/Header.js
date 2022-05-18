@@ -15,23 +15,23 @@ const Header = () => {
   return (
     <div className='w-full fixed top-0 py-1.5'>
       <div className='flex justify-between max-w-[764px] mx-auto'>
-        <div className='w-10 h-10 relative lg:hidden cursor-pointer ml-2'>
+        <div className='w-8 h-8 relative lg:hidden cursor-pointer ml-2'>
           <Image
-            src='https://img.icons8.com/color/344/instagram-new.png'
+            src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png'
             layout='fill'
             objectFit='contain'
           />
         </div>
         <div className='hidden lg:inline flex-shrink-0 h-10 w-24 relative cursor-pointer'>
           <Image
-            src='https://freepngimg.com/save/76861-web-instagram-script-typeface-typography-font/1785x612'
+            src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/800px-Instagram_logo.svg.png'
             layout='fill'
             objectFit='contain'
           />
         </div>
 
         <div
-          className={`flex items-center mt-1 h-8 rounded-md bg-gray-50 px-2 ${
+          className={`flex items-center h-8 lg:mt-1 rounded-md bg-gray-50 px-2 ${
             border ? 'border-2 border-black' : ''
           }`}
         >
