@@ -6,4 +6,8 @@
   .header_icons {
     @apply w-5 h-5 cursor-pointer hover:scale-110 transition duration-200;
   }
+
+  .postIcon {
+    @apply w-5 h-5 cursor-pointer hover:scale-110 transition duration-200;
+  }
 }

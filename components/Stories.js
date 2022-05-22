@@ -13,7 +13,7 @@ const Stories = () => {
   }, []);
 
   return (
-    <div className='flex border shadow-md overflow-x-scroll mt-2 lg:mt-3 p-2 py-4 space-x-2 rounded-[3px] scrollbar-thin scrollbar-thumb-pink-600'>
+    <div className='flex border shadow-md overflow-x-scroll mt-2 lg:mt-3 p-2 py-4 space-x-2 rounded-[3px] scrollbar-thin scrollbar-thumb-pink-600 bg-white'>
       {users.map((user) => (
         <Story key={user.id} username={user.username} avatar={user.avatar} />
       ))}
