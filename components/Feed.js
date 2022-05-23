@@ -1,6 +1,8 @@
 import React from 'react';
 import Posts from './Posts';
+import Profile from './Profile';
 import Stories from './Stories';
+import Suggestions from './Suggestions';
 
 const Feed = () => {
   return (
@@ -9,9 +11,11 @@ const Feed = () => {
         <Stories />
         <Posts />
       </div>
-      <div>
-        {/* profile */}
-        {/* suggestions */}
+      <div className='hidden lg:inline-grid md:col-span-1'>
+        <div className='fixed top-[50px] lg:w-[280px]'>
+          <Profile />
+          <Suggestions />
+        </div>
       </div>
     </div>
   );
