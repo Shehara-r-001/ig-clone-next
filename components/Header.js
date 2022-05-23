@@ -10,9 +10,14 @@ import {
 } from 'react-icons/ai';
 import { RiMessengerLine } from 'react-icons/ri';
 import { FaRegCompass } from 'react-icons/fa';
+import { useSession } from 'next-auth/react';
 
 const Header = () => {
   const [border, setBorder] = useState(false);
+  const { data: session } = useSession();
+
+  console.log(session);
+
   return (
     <div className='w-full fixed top-0 py-1.5 shadow-md z-50 bg-white'>
       <div className='flex justify-between max-w-[764px] mx-auto'>
