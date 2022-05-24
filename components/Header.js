@@ -12,11 +12,14 @@ import { RiMessengerLine } from 'react-icons/ri';
 import { FaRegCompass } from 'react-icons/fa';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
+import { useRecoilState } from 'recoil';
+import { modalState } from '../atoms/modalAtom';
 
 const Header = () => {
   const [border, setBorder] = useState(false);
   const { data: session } = useSession();
   const router = useRouter();
+  const [open, setOpen] = useRecoilState(modalState);
 
   // console.log(session);
 
@@ -72,7 +75,10 @@ const Header = () => {
                   <p className='ml-1'>5</p>
                 </div>
               </div>
-              <AiOutlinePlus className='header_icons hidden sm:inline border-2 border-black rounded-md' />
+              <AiOutlinePlus
+                onClick={() => setOpen(true)}
+                className='header_icons hidden sm:inline border-2 border-black rounded-md'
+              />
               <FaRegCompass className='header_icons hidden sm:inline' />
               <AiOutlineMenu className='header_icons sm:hidden' />
               <AiOutlineHeart className='header_icons' />
