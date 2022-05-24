@@ -7,6 +7,7 @@ const nextConfig = {
       'i.pinimg.com',
       'upload.wikimedia.org',
       'avatars.githubusercontent.com',
+      'lh3.googleusercontent.com',
     ],
   },
 };
